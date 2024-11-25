@@ -91,6 +91,10 @@ jobs:
           bundle exec jekyll build
       - name: Purge unused CSS 🧹
         run: |
+          chmod a+x bin/*
+          git commit -am "add execute permission to bin/deploy"
+      - name: Purge unused CSS 🧹
+        run: |
           npm install -g purgecss
           purgecss -c purgecss.config.js
       - name: Deploy 🚀
