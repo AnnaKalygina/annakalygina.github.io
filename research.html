@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research — Anna Kalygina</title>
+  <link rel="stylesheet" href="/assets/css/style.css?v=5">
+</head>
+<body>
+
+<nav>
+  <a href="/"><img src="/assets/img/drawing-12.png" alt="">about</a>
+  <a href="/research.html" class="current"><img src="/assets/img/drawing-07.png" alt="">research</a>
+  <a href="/essays.html"><img src="/assets/img/drawing-11.png" alt="">essays</a>
+  <a href="/cv.html"><img src="/assets/img/drawing-14.png" alt="">cv</a>
+</nav>
+
+<section>
+  <div class="section-heading">
+    <img src="/assets/img/drawing-07.png" alt="">
+    <h2>research</h2>
+  </div>
+
+  <p>I work at the intersection of genomics and machine learning. Below are the academic projects I've worked on, most recent first.</p>
+
+  <article class="project">
+    <h3 class="project-title">Virtual cells with latent reasoning</h3>
+    <p class="project-meta">Boeva Lab, ETH Zürich · Oct 2025 – present</p>
+    <!-- to show figure, uncomment the line below:
+    <figure class="project-figure"><img src="/assets/img/research-virtualcell.png" alt="Perturbations trigger multi-step changes — in silico perturbation and signaling cascade illustration"></figure>
+    -->
+    <p>I am exploring recurrent architectures that maintain a latent reasoning state to predict cellular responses under interventions.</p>
+    <p>Alongside, I am benchmarking state-of-the-art virtual cell models on cellular perturbation-response prediction to understand where current architectures actually succeed and where they over-generalize.</p>
+    <p>ICML 2026 poster: <a href="https://openreview.net/forum?id=U5Gq071xcI">benchmarking virtual cell models</a></p>
+  </article>
+
+  <article class="project">
+    <h3 class="project-title">DNA shape and its effect on gene expression</h3>
+    <p class="project-meta">Steve Kelly Lab, University of Oxford · Sep 2024 – Jun 2025 · Master's thesis</p>
+    <!-- to show figure, uncomment the line below:
+    <figure class="project-figure"><img src="/assets/img/research-dnashape.png" alt="Transcriptional initiation complex assembly and DNA shape features (opening and slide)"></figure>
+    -->
+    <p>I engineered a convolutional neural network that predicts promoter location and its effect on gene expression purely from the physical shape of DNA.</p>
+    
+  </article>
+
+  <article class="project">
+    <h3 class="project-title">FiberFold: predicting 3D chromatin organization from single-molecule sequencing</h3>
+    <p class="project-meta">Altemose Lab, Stanford · Jun – Sep 2024</p>
+    <!-- to show figure, uncomment the line below:
+    <figure class="project-figure"><img src="/assets/img/research-fiberfold.png" alt="FiberFold predicted Hi-C contact map"></figure>
+    -->
+    <p>I worked with Danilo Dubocanin on preprocesing and training pipeline for FiberFold to predict Hi-C chromatin contact maps from single-molecule Fiber-seq data (long-read methylation footprints). Fiber-seq captures haplotype-resolved chromatin state on individual DNA molecules, and FiberFold turns that signal into predicted 3D contact maps without needing population-level Hi-C input. We applied this to patient-derived samples with chromosomal translocations.</p>
+    <p>preprint: Dubocanin D., <strong>Kalygina A.</strong>, et al. <em>Integrating single-molecule sequencing and deep learning to predict haplotype-specific 3D chromatin organization in a Mendelian condition.</em> bioRxiv, 2025. <a href="https://doi.org/10.1101/2025.02.26.640261">doi:10.1101/2025.02.26.640261</a> · <a href="https://github.com/altemoselab/fiberFold">code</a></p>
+  </article>
+
+  <article class="project">
+    <h3 class="project-title">Recycling protein pathways at the membrane</h3>
+    <p class="project-meta">Kovtun Lab, Max Planck Institute for Multidisciplinary Sciences · Jul – Sep 2022</p>
+    <!-- to show figure, replace src="" below with a path and uncomment:
+    <figure class="project-figure"><img src="" alt=""></figure>
+    -->
+    <p>I worked in a structural biology lab studying transmembrane trafficking proteins. On the computational side, I implemented a sliding-window algorithm to analyze particle colocalization on electron microscopy images, and wrote macros to simulate large protein interactions using AlphaFold.</p>
+    <p>On the wet side, I contributed to preparation for the cryo-EM experiments aimed at understanding how recycling protein pathways are organized at the membrane.</p>
+  </article>
+</section>
+
+<footer>
+  <a href="/">← back</a>
+</footer>
+
+</body>
+</html>

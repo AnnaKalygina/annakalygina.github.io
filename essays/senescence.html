@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Senescence — Anna Kalygina</title>
+  <link rel="stylesheet" href="/assets/css/style.css?v=5">
+</head>
+<body>
+
+<nav>
+  <a href="/"><img src="/assets/img/drawing-12.png" alt="">about</a>
+  <a href="/research.html"><img src="/assets/img/drawing-07.png" alt="">research</a>
+  <a href="/essays.html" class="current"><img src="/assets/img/drawing-11.png" alt="">essays</a>
+  <a href="/cv.html"><img src="/assets/img/drawing-14.png" alt="">cv</a>
+</nav>
+
+<article class="essay">
+  <header class="essay-header">
+    <h1 class="essay-title">Senescence</h1>
+    <p class="essay-meta">Advanced Cell tutorial · Oxford · 2024</p>
+  </header>
+
+  <h2>introduction</h2>
+  <p>Although humans tend to think of aging and senescence as synonyms, the two terms are quite different, and their definitions vary depending on the scientific field. From an evolutionary perspective, while aging represents the mere passing of time, senescence involves a decrease in fertility and an increase in the risk of mortality after the age of maturity (Roper et al., 2021). Even though in humans these two processes are coupled, that is not always the case — all organisms age, but not necessarily senesce. For example, animals such as hydra and some platyhelminths do not experience senescence. Other organisms, including the plant <em>P. lanceolata</em> and some coral species, are believed to exhibit negative senescence — their fertility and survival increase after the age of maturity (Vaupel et al., 2004). However, from the perspective of molecular biology, aging is considered a gradual decline in the functionality of a cell or organism over time, and senescence is specifically a cellular response that can be initiated acutely independent of an organism's age (McHugh &amp; Gil, 2018; Evangelou et al., 2023). In this essay, I will focus on cellular senescence. More specifically, I will describe its characteristics, causes, and consequences, as well as how it can be treated using senotherapeutics.</p>
+
+  <h2>main characteristics of senescent cells</h2>
+
+  <h3>cell cycle arrest</h3>
+  <p>Perhaps the most prominent characteristic of senescent cells is stable cell cycle arrest (McHugh &amp; Gil, 2018). Its function is to prevent proliferation of cells with DNA damage or other deficiencies. It is important to note that cell cycle arrest in senescent cells differs from terminal differentiation and quiescence, which also involve withdrawal from the cell cycle, but are observed in non-senescent cells (Gorgoulis et al., 2019). Cell cycle arrest and terminal differentiation differ in the signaling pathways that initiate the response. On the other hand, while cell cycle arrest is generally irreversible (except in e.g., tumors), quiescence is transient. Given these distinctions, stable cell cycle arrest is considered a defining characteristic of senescent cells. But how is this process initiated?</p>
+
+  <p>Cell cycle arrest can be achieved through two tumor-suppressor signaling pathways: p16<sup>INK4A</sup>/pRb and p53/p21<sup>WAF1/CIP1</sup> (McHugh &amp; Gil, 2018). In normal cells, p16<sup>INK4A</sup> (which is encoded in the INK4/ARF locus) is repressed, but in senescent cells, the locus is activated and the p16<sup>INK4A</sup>/pRb pathway is induced. As for the p53/p21<sup>WAF1/CIP1</sup> pathway, it is activated as a result of repair-resistant DNA-SCARS (DNA segments with chromatin alterations reinforcing senescence) inducing the DNA damage response (DDR). Additionally, while p53 and pRb are both transcriptional regulators, p21 and p16 are CDK inhibitors, i.e., they block CDK which is essential for the progression of the cell cycle (Kumari &amp; Jat, 2021). Therefore, the two pathways converge on the inhibition of CDK, thereby leading to G1 arrest of the cell cycle in senescent cells.</p>
+
+  <h3>SASP</h3>
+  <p>Another feature unique to senescent cells is the so-called senescence-associated secretory phenotype (SASP). It includes pro-inflammatory cytokines and chemokines, angiogenic and growth factors, as well as proteases, such as matrix metalloproteinases which can modify the extracellular matrix (ECM). SASP can have both a positive effect (e.g., the recruitment of immune cells to remove senescent cells), and a negative one (e.g., facilitation of tumorigenesis) (McHugh &amp; Gil, 2018). The exact composition of SASP is cell-specific and depends on the means by which senescence has been induced in the given cell. Nevertheless, the regulation and function of SASP has common key players. The regulation of SASP involves the overall remodeling of enhancers and the activation of transcription factors such as NF-kB, CEBPβ and GATA4 (Gorgoulis et al., 2019). There are multiple signaling pathways that can activate these regulators, including mTOR, p38MAPK and cGAS/STING. To give an idea of how these pathways initiate SASP, I will describe the cGAS/STING pathway.</p>
+
+  <p>cGAS is a protein which resides in the cytoplasm of cells and serves as a sensor of double-stranded DNA. Therefore, if the integrity of the nuclear envelope or mitochondrial membrane is ruined, or if the autonomously replicating transposable element LINE is activated, DNA molecules end up in the cytoplasm and are recognized by cGAS (Kumari &amp; Jat, 2021). Consequently, cGAS induces cGAMP formation, which in turn activates the adaptor protein STING. STING recruits the kinases TBK1 and IKK. The former phosphorylates the transcription factor IRF3, which gets translocated into the nucleus and induces the expression of IFN-β. As for IKK, it induces the aforementioned NF-kB, which in turn activates the expression of pro-inflammatory cytokines, including IL-8 and IL-6. In other words, the cGAS/STING pathway activates SASP and the innate immune response in both the damaged cell and the cells around it (Kumari &amp; Jat, 2021). With that said, although SASP and cell cycle arrest are the defining features of senescent cells, several other typical characteristics exist.</p>
+
+  <h3>resistance to apoptosis, alterations in metabolism, damage to macromolecules</h3>
+  <p>Other characteristics of senescent cells include resistance to apoptosis, alterations in metabolism and damage of macromolecules (Gorgoulis et al., 2019). The increased resistance to apoptosis results from the induction of cell survival pathways. For instance, activation of the BCL-2 anti-apoptotic protein leads to the inhibition of BAX/BAK oligomerization (Evangelou et al., 2023). If there was no such inhibition, BAX/BAK could initiate apoptosis by making a pore in the mitochondrial membrane. This would lead to the release of cytochrome-C and other pro-apoptotic proteins into the cytosol, and hence to the initiation of programmed cell death (McArthur et al., 2018). Therefore, by inhibiting BAX/BAK, BCL-2 increases resistance to apoptosis. As for alterations in metabolism and damage of macromolecules, they are very interconnected — for instance, senescent cells have less functional mitochondria therefore there is an increase in the production of reactive oxygen species (ROS), which in turn can damage, e.g., proteins and lipids within the cell (Gorgoulis et al., 2019). This is further exacerbated by the fact that lysosomes in senescent cells also do not function properly, so dysfunctional mitochondria persist and even more ROS are made, which induce further damage to macromolecules, mitochondria and lysosomes. Dysfunctional lysosomes in senescent cells tend to accumulate lipofuscin (insoluble aggregates of proteins, sugars and lipids), which has been found to activate the expression of BCL-2 (Gorgoulis et al., 2019). Therefore, alterations in metabolism and damage to macromolecules are also tightly linked to resistance of apoptosis. All of the described features are accompanied by changes in gene expression and epigenetic marks, but whether there is a distinct e.g., epigenetic profile of senescent cells, has yet to be determined.</p>
+
+  <p>Having described the main characteristics of senescent cells, we will now move on to discuss how the pathways leading to these features are triggered.</p>
+
+  <h2>causes — damage in all its forms</h2>
+  <p>There are many factors, both intrinsic and extrinsic, which can cause cellular senescence: telomere shortening, oncogene activation, inflammation, mitochondrial dysfunction, radiation, chemotherapeutic drugs, etc. (Kumari &amp; Jat, 2021). All of these stimuli usually lead to one thing — persistent DNA damage, which can then induce senescence via the aforementioned cell cycle arrest and SASP pathways. The stimuli can be grouped into three main types of senescence: replicative senescence, oncogene-induced senescence, and stress-induced senescence (Kumari &amp; Jat, 2021).</p>
+
+  <h3>replicative senescence</h3>
+  <p>Replicative senescence involves the shortening of telomeres and the accumulation of damage in the telomeres over time (McHugh &amp; Gil, 2018). Telomeres are repetitive DNA sequences located at the ends of chromosomes, and their function is related to the end-replication problem — DNA polymerase cannot replicate the end of the chromosome, so at each replication cycle several nucleotides are lost. The presence of non-coding sequences (the telomeres) at the chromosomal ends prevents the loss of coding DNA. However, it also means that a cell can undergo only a finite number of replication cycles (known as the Hayflick limit), because eventually its telomeres will be eliminated and genomic instability will ensue. More specifically, the multiprotein complex shelterin that is usually bound to the telomeres, thereby preventing chromosomal fusion and initiation of the DNA damage response (DDR), eventually loses its ability to bind to telomeres because of their shortening (McHugh &amp; Gil, 2018). This leads to genomic instability, activation of the DDR, and senescence. However, telomere shortening does not occur in embryonic and stem cells, because they express the enzyme telomerase, which has the ability to extend telomeres (McHugh &amp; Gil, 2018). In other words, all cells encode telomerase, but few express it in an adult organism. Cancer cells however are able to induce its expression, thereby achieving "replicative immortality" — one of the hallmarks of the disease.</p>
+
+  <h3>oncogene-induced senescence</h3>
+  <p>The second type of senescence is oncogene-induced senescence (OIS) (Kojima et al., 2013). Oncogenes are mutated proto-oncogenes — while the latter is involved in the normal progression of the cell cycle, the former can lead to cancer via the induction of e.g., uncontrolled proliferation. Therefore, in order for the propagation of this abnormal genome to be prevented, the cell must go into cell cycle arrest. One way to do that is through senescing, hence the name OIS. Oncogenes that commonly induce senescence include Ras, Raf, MEK and c-Myc (Kojima et al., 2013). Given that OIS sometimes depends only on few mutations, OIS can occur in cells regardless of their age, unlike replicative-senescence, which generally is positively correlated with age.</p>
+
+  <h3>stress-induced senescence</h3>
+  <p>The final type of senescence is stress-induced premature senescence (SIPS) (Kojima et al., 2013). The nature of the stressor can vary widely: oxidative stress, radiation, genotoxic drugs, inflammation, etc. Oxidative stress can be caused by chemicals such as hydrogen peroxide and paraquat, which stimulate the production of excess amounts of ROS in mitochondria (Gorgoulis et al., 2019). Furthermore, radiation and genotoxic agents can cause direct DNA damage, thereby initiating the DDR (Kojima et al., 2013). As for inflammation, prolonged and constant exposure to pro-inflammatory cytokines can trigger senescence in immune cells — the so-called immunosenescence phenomenon (McHugh &amp; Gil, 2018).</p>
+
+  <p>Having discussed the causes of senescence, we will now turn to its consequences, some of which have already been mentioned.</p>
+
+  <h2>consequences — positive and negative</h2>
+  <p>Cellular senescence can have both beneficial and harmful effects. For instance, the main purpose of senescence is to prevent the proliferation of damaged cells. After cell cycle arrest is in place, SASP components recruit immune cells such as macrophages to eliminate senescent cells, thereby contributing to tissue homeostasis and preventing tumorigenesis (Evangelou et al., 2023). Furthermore, SASP is involved in wound-healing and tissue repair. Another positive aspect of senescence is the role it plays in mammalian embryogenesis, when transient senescence influences patterning and growth of the embryo (Evangelou et al., 2023). In other words, short-term senescence generally has beneficial effects.</p>
+
+  <p>However, senescence also has negative consequences. For example, SASP can facilitate tumorigenesis by inducing tumor growth, angiogenesis and epithelial-to-mesenchymal transition, all of which are necessary for cancer progression. In addition, SASP can recruit immature myeloid cells, which suppress the immune system in cancers such as prostate and lung (McHugh &amp; Gil, 2018). If the composition of SASP is mostly pro-inflammatory, it could lead to chronic inflammation, also known as inflammaging. Furthermore, SASP is capable of reinforcing senescence in both an autocrine and paracrine manner, thereby leading to the accumulation of senescent cells, especially with age. This, combined with the gradual decline of immune functions over time, means that senescent cells are not effectively removed and can lead to disease (McHugh &amp; Gil, 2018). In other words, long-term senescence generally has harmful effects, mediated predominantly by SASP. Given the negative consequences, it is not surprising that scientists are developing therapies to control senescence.</p>
+
+  <h2>senotherapeutics</h2>
+  <p>Senotherapeutics can be divided into three main classes: senolytics, senomorphics, and immune system modifiers. Senolytics are drugs that selectively kill senescent cells by repressing cell survival pathways, jointly referred to as SCAPs (senescent cell antiapoptotic pathways) (Evangelou et al., 2023). One example of a senolytic drug is navitoclax, which inhibits BCL-2, thereby enabling apoptosis of senescent cells. Navitoclax is used as a cancer treatment, but likely does not have potential to be used prophylactically, because it causes serious reduction in platelet and neutrophil numbers (called thrombocytopenia and neutropenia, respectively) (McHugh &amp; Gil, 2018). In contrast, senomorphics do not kill senescent cells, but rather reduce their negative impact. For example, senomorphics such as rapamycin and metformin suppress SASP, thereby reducing the pro-inflammatory effect of senescent cells (Evangelou et al., 2023). Finally, immunotherapies can also be used to eliminate senescent cells by enhancing the function of the immune system. For instance, senescent cells generally express high levels of major histocompatibility complex class I (MHC-I) with atypical components. This abnormal MHC-I binds to a receptor on the surface of natural killer (NK) cells and prevents them from killing senescent cells (Song et al., 2020). Therefore, compounds that block the interaction between atypical MHC-I and the NK receptor, such as monalizumab, may represent promising senotherapeutics.</p>
+
+  <h2>conclusion</h2>
+  <p>Cellular senescence is one of the hallmarks of ageing, and can be induced by a variety of stimuli, such as telomere attrition, oncogene activation and oxidative stress. These factors usually lead to irreparable DNA damage and to the activation of pathways that induce cell cycle arrest and the production of a unique secretome. Although the process is beneficial in the context of embryogenesis and the removal of damaged cells, it can also cause diseases. Therefore, scientists are developing therapies, such as senolytic drugs, senomorphics and immunotherapies, which have the potential to increase human "healthspan" (the proportion of lifespan that is experienced while in good health). Even though some might consider the prevention of senescence a lost cause, there are organisms that do not senesce… so then why should we senesce?</p>
+
+  <div class="references">
+    <h2>references</h2>
+    <ol>
+      <li>Roper, M., Capdevila, P., &amp; Salguero-Gómez, R. (2021). Senescence: Why and where selection gradients might not decline with age. <em>Proceedings of the Royal Society B</em>, 288(1955), 20210851.</li>
+      <li>Vaupel, J. W., Baudisch, A., Dölling, M., Roach, D. A., &amp; Gampe, J. (2004). The case for negative senescence. <em>Theoretical Population Biology</em>, 65(4), 339–351.</li>
+      <li>McHugh, D., &amp; Gil, J. (2017). Senescence and aging: Causes, consequences, and therapeutic avenues. <em>Journal of Cell Biology</em>, 217(1), 65–77.</li>
+      <li>Evangelou, K., et al. (2023). Cellular senescence and cardiovascular diseases: Moving to the "heart" of the problem. <em>Physiological Reviews</em>, 103(1), 609–647.</li>
+      <li>Gorgoulis, V., et al. (2019). Cellular senescence: Defining a path forward. <em>Cell</em>, 179(4), 813–827.</li>
+      <li>Kumari, R., &amp; Jat, P. (2021). Mechanisms of cellular senescence: Cell cycle arrest and senescence associated secretory phenotype. <em>Frontiers in Cell and Developmental Biology</em>, 9.</li>
+      <li>McArthur, K., et al. (2018). BAK/BAX macropores facilitate mitochondrial herniation and mtDNA efflux during apoptosis. <em>Science</em>, 359(6378).</li>
+      <li>Kojima, H., Inoue, T., Kunimoto, H., &amp; Nakajima, K. (2013). IL-6-STAT3 signaling and premature senescence. <em>JAK-STAT</em>, 2(4).</li>
+      <li>Song, P., An, J., &amp; Zou, M.-H. (2020). Immune clearance of senescent cells to combat ageing and chronic diseases. <em>Cells</em>, 9(3), 671.</li>
+    </ol>
+  </div>
+
+</article>
+
+<section class="comments">
+  <h2>comments</h2>
+  <p style="color: var(--muted); font-size: 0.9rem;">Comments will appear here once GitHub Discussions is configured (see README). In the meantime, <a href="https://github.com/AnnaKalygina/annakalygina.github.io/discussions">open a discussion on GitHub</a>.</p>
+</section>
+
+<footer>
+  <a href="/essays.html">← all essays</a>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,343 @@
+:root {
+  --bg: #fdfdfb;
+  --ink: #1a1a1a;
+  --muted: #6b6b6b;
+  --rule: #e6e3dc;
+  --accent: #1a1a1a;
+  --max: 640px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "URW Palladio L", Georgia, serif;
+  font-size: 14.5px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  cursor: url('/assets/img/cursor-kitten.svg') 16 16, auto;
+}
+
+a, summary, .essay-card, button, [role="button"] {
+  cursor: url('/assets/img/cursor-kitten.svg') 16 16, pointer;
+}
+
+body {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 3rem 1.25rem 6rem;
+}
+
+a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+a:hover { color: var(--muted); }
+
+nav {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+  font-size: 0.95rem;
+}
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  line-height: 1;
+}
+nav a img {
+  max-width: 2.5em;
+  max-height: 1.6em;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+  opacity: 0.85;
+}
+nav a:hover { color: var(--ink); }
+nav a:hover img { opacity: 1; }
+nav a.current { color: var(--ink); font-style: italic; }
+nav a.current img { opacity: 1; }
+
+header.intro {
+  margin-bottom: 2.5rem;
+}
+header.intro h1 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 0 0 0.25rem;
+  letter-spacing: -0.01em;
+}
+header.intro .tagline {
+  color: var(--muted);
+  margin: 0;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 2.5rem 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--rule);
+}
+.section-heading img {
+  height: 1.4em;
+  width: auto;
+  display: block;
+  flex-shrink: 0;
+  mix-blend-mode: multiply;
+}
+.section-heading h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: 0.02em;
+  text-transform: lowercase;
+  line-height: 1.4;
+}
+
+/* CV collapsible entries */
+details.entry {
+  margin-bottom: 0.9rem;
+  border-bottom: 1px dotted var(--rule);
+  padding-bottom: 0.9rem;
+}
+details.entry:last-child { border-bottom: none; }
+details.entry > summary {
+  cursor: pointer;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1em 1fr;
+  gap: 0.5rem;
+  align-items: baseline;
+}
+details.entry > summary::-webkit-details-marker { display: none; }
+details.entry > summary::before {
+  content: "›";
+  color: var(--muted);
+  font-size: 1.1em;
+  transition: transform 0.15s ease;
+  display: inline-block;
+  transform-origin: 50% 55%;
+}
+details.entry[open] > summary::before {
+  transform: rotate(90deg);
+}
+details.entry .summary-text {
+  display: block;
+}
+details.entry .summary-text .title {
+  font-weight: 600;
+}
+details.entry .summary-text .meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+details.entry .body {
+  padding: 0.5rem 0 0 1.5em;
+  color: var(--ink);
+}
+details.entry .body p { margin: 0; }
+
+p { margin: 0 0 1rem; }
+
+ul.bare {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+}
+ul.bare li {
+  margin-bottom: 1rem;
+}
+
+.entry {
+  margin-bottom: 1.5rem;
+}
+.entry .title {
+  font-weight: 600;
+}
+.entry .meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin-top: 2rem;
+}
+
+footer {
+  margin-top: 5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--rule);
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* TODO placeholder marker */
+.todo {
+  display: inline-block;
+  padding: 0 0.35em;
+  background: #fff4c4;
+  color: #6b5300;
+  border-radius: 3px;
+  font-size: 0.85em;
+  font-style: italic;
+}
+
+/* Research project entries */
+article.project {
+  margin: 0 0 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px dotted var(--rule);
+}
+article.project:last-child { border-bottom: none; }
+article.project .project-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0 0 0.2rem;
+  line-height: 1.35;
+}
+article.project .project-meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-style: italic;
+  margin: 0 0 1rem;
+}
+article.project figure.project-figure {
+  margin: 0 0 1rem;
+}
+article.project figure.project-figure img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 2px;
+  border: 1px solid var(--rule);
+  background: #fff;
+}
+article.project figure.project-figure img[src=""],
+article.project figure.project-figure img:not([src]) {
+  display: none;
+}
+article.project p { margin: 0 0 0.75rem; }
+
+/* Essay index cards */
+.essay-card {
+  display: block;
+  text-decoration: none;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--rule);
+  color: inherit;
+}
+.essay-card:last-child { border-bottom: none; }
+.essay-card:hover .essay-card-title { color: var(--muted); }
+.essay-card-title {
+  font-weight: 600;
+  margin: 0 0 0.25rem;
+  font-size: 1.05rem;
+}
+.essay-card-meta {
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-style: italic;
+  margin: 0 0 0.5rem;
+}
+.essay-card-desc {
+  margin: 0;
+  color: var(--ink);
+}
+
+/* Essay body */
+article.essay header.essay-header {
+  margin-bottom: 2rem;
+}
+article.essay h1.essay-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0 0 0.4rem;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+article.essay .essay-meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+article.essay h2 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 2rem 0 0.6rem;
+  text-transform: lowercase;
+  letter-spacing: 0.02em;
+}
+article.essay h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 1.4rem 0 0.4rem;
+  text-transform: lowercase;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+}
+article.essay ul {
+  margin: 0 0 1rem;
+  padding-left: 1.2rem;
+}
+article.essay ul li { margin-bottom: 0.3rem; }
+article.essay p { margin: 0 0 1rem; }
+article.essay .references {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+article.essay .references h2 {
+  color: var(--ink);
+  margin-top: 0;
+}
+article.essay .references ol {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+article.essay .references li { margin-bottom: 0.5rem; }
+
+/* Comments block */
+.comments {
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--rule);
+}
+.comments h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 1rem;
+  text-transform: lowercase;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+}
+
+@media (max-width: 480px) {
+  body { padding: 2rem 1rem 4rem; font-size: 13.5px; }
+  header.intro h1 { font-size: 1.4rem; }
+  article.essay h1.essay-title { font-size: 1.2rem; }
+  nav { gap: 0.9rem; }
+}
